@@ -58,4 +58,5 @@ int main() {
    std::cin>>n;
    //std::cout << "Number of bits set in " << n << " is equal to " << numBitsSet(n) << std::endl;
    std::cout << "Number of bits set in " << n << " is equal to " << totalBitsSet(n) << std::endl;
+   return 0;
 }
