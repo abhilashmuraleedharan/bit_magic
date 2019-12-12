@@ -32,11 +32,12 @@ int main() {
    std::cin>>k;
    try {
       if (isBitSet(n, k)) {
-         std::cout << k << "th bit is set" << std::endl;
+         std::cout << "kth bit is set" << std::endl;
       } else {
-         std::cout << k << "th bit is not set" << std::endl;
+         std::cout << "kth bit is not set" << std::endl;
       }
    } catch (std::runtime_error & e) {
       std::cout << "Exception: " << e.what() << std::endl;
    }
+   return 0;
 }
