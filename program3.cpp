@@ -33,4 +33,5 @@ int main() {
    } else {
       std::cout << n << " is not a power of 2" << std::endl;
    }
+   return 0;
 }
