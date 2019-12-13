@@ -19,8 +19,9 @@
  * Time Complexity: Theta(N Squared)
  */
 int oddOccurringNumber1(int *arr, int size) {
-   int count = 0;
+   int count;
    for (int i=0; i<size; i++) {
+      count = 0;
       for (int j=0; j<size; j++) {
          if (arr[i] == arr[j]) {
             count++;
