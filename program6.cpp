@@ -1,6 +1,6 @@
 /*
  * Objective:
- * Given an array of integers, that has 2 elememts that's occurring
+ * Given an array of integers, that has 2 elements that're occurring
  * odd number of times while rest of the elements are occurring even number 
  * of times, write a C++ program that displays the two odd occurring
  * numbers.
@@ -21,15 +21,15 @@
  * Time Complexity: Theta(N Squared)
  */
 void printOddOccurringNumbers1(int *arr, int size) {
-   int count = 0;
+   int count;
    for (int i=0; i<size; i++) {
+      count = 0;
       for (int j=0; j<size; j++) {
          if (arr[i] == arr[j]) {
             count++;
          }
       }
-      // Since there can be only 1 odd occurring number,
-      // return the element value as soon as you find one.
+      // Print the pdd occurring number.
       if (count%2 != 0)
          std::cout << arr[i] << " ";
    }
@@ -43,7 +43,7 @@ void printOddOccurringNumbers1(int *arr, int size) {
  * where x and y are the two odd occurring elements.
  * So for e.g. if the input array is
  * [2, 3, 4, 2, 3, 4, 3, 5]
- * then xor of all the elements in this array xor = 3^5
+ * then xor of all the elements in this array, xor = 3^5
  *   000...0011 ^
  *   000...0101
  * = 000...0110 = 6
@@ -89,7 +89,7 @@ void printOddOccurringNumbers(int *arr, int size) {
 }
 
 int main() {
-   std::cout << "Program that prints the only two odd occurring numbers in a given array" << std::endl;
+   std::cout << "Program that prints the two odd occurring numbers in a given array" << std::endl;
    std::cout << "Enter the size of the input array: ";
    int size = 0;
    std::cin>>size;
@@ -103,8 +103,8 @@ int main() {
       std::cout << arr[i] << " ";
    std::cout << "]" << std::endl;
    std::cout << "The odd occurring elements are: ";
-   printOddOccurringNumbers1(arr, size);
-   //printOddOccurringNumbers(arr, size);
+   //printOddOccurringNumbers1(arr, size);
+   printOddOccurringNumbers(arr, size);
    delete []arr;
    return 0;
 }
