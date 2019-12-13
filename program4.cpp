@@ -83,5 +83,6 @@ int main() {
       std::cout << "The odd occuring array element is " << res << std::endl;
    else
       std::cout << "There are no odd occurring elements in the array" << std::endl;
+   delete []arr;
    return 0;
 }

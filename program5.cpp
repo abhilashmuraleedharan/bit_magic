@@ -64,8 +64,8 @@ int main() {
    for (int i=0; i<size; i++)
       std::cout << arr[i] << " ";
    std::cout << "]" << std::endl;
-   // std::cout << "The missing number is " <<  findMissingNumber(arr, size) << std::endl;
-   std::cout << "The missing number is " <<  findMissingNumber2(arr, size) << std::endl;
+   std::cout << "The missing number is " <<  findMissingNumber(arr, size) << std::endl;
+   // std::cout << "The missing number is " <<  findMissingNumber2(arr, size) << std::endl;
    delete []arr;
    return 0;
 }
