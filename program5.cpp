@@ -40,6 +40,11 @@ int findMissingNumber(int *arr, int size) {
    return res1 ^ res2;
 }
 
+/*
+ * Alternate Method
+ *
+ * Time Complexity: Theta(N)
+ */
 int findMissingNumber2(int *arr, int size) {
    int sum1 = 0, sum2 = 0;
    // Find sum of all the elements in the array
