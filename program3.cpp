@@ -25,7 +25,7 @@
  *
  * Time Complexity: Theta(Number of Bits used to represent Integer)  
  */
-bool isPowerOfTwoNaive(unsigned n) {
+bool isPowerOfTwoNaive(int n) {
    while (n!=1) {
       if (n%2 != 0) { return false; }
       n = n >> 1;
@@ -44,13 +44,13 @@ bool isPowerOfTwoNaive(unsigned n) {
  *
  * Time Complexity: Theta(Number of Set Bits)
  */
-bool isPowerOfTwo(unsigned n) {
+bool isPowerOfTwo(int n) {
    return ((n != 0) && ((n&(n-1)) == 0));
 }
   
 int main() {
    std::cout << "Program that checks whether given number n is a power of 2 or not" << std::endl;
-   unsigned n=0;
+   int n=0;
    std::cout << "Enter a positive n value: ";
    std::cin>>n;
    if (isPowerOfTwo(n)) {
