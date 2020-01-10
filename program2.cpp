@@ -21,7 +21,7 @@
  *
  * Time Complexity: Theta(Number Of Bits Used To Represent the Integer)
  */
-int numBitsSet(unsigned n) {
+int numBitsSet(int n) {
    if (n==0) return 0;
    int count = 0;
    while (n>0) {
@@ -41,7 +41,7 @@ int numBitsSet(unsigned n) {
  * Using this understanding, you can write a function that calculates number of bits
  * set in a given number n in Theta(Number of Bits Set) time.
  */
-int totalBitsSet(unsigned n) {
+int totalBitsSet(int n) {
    if (n==0) return 0;
    int count = 0;
    while (n>0) {
@@ -53,7 +53,7 @@ int totalBitsSet(unsigned n) {
   
 int main() {
    std::cout << "Program to calculate the number of \'set bits\' in a given number n" << std::endl;
-   unsigned n=0;
+   int n=0;
    std::cout << "Enter a positive n value: ";
    std::cin>>n;
    //std::cout << "Number of bits set in " << n << " is equal to " << numBitsSet(n) << std::endl;
