@@ -33,7 +33,7 @@
  * If n%4 is
  * a) Equals to 0, then XOR will be n
  * b) Equals to 1, then XOR will be 1
- * c) Equals to 2, then XOR will n
+ * c) Equals to 2, then XOR will n+1
  * d) Equals to 3, then XOR will be 0
  *
  * Time Complexity: O(1)
