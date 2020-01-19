@@ -42,7 +42,7 @@ bool isPowerOfTwoNaive(int n) {
  * itself, it means there is only 1 bit set in n and it must be
  * a power of 2.
  *
- * Time Complexity: Theta(Number of Set Bits)
+ * Time Complexity: Theta(1)
  */
 bool isPowerOfTwo(int n) {
    return ((n != 0) && ((n&(n-1)) == 0));
