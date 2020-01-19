@@ -29,7 +29,7 @@ void printOddOccurringNumbers1(int *arr, int size) {
             count++;
          }
       }
-      // Print the pdd occurring number.
+      // Print the odd occurring number.
       if (count%2 != 0)
          std::cout << arr[i] << " ";
    }
